@@ -1,0 +1,71 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+footer {
+	background-color: #1c1c1c;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 20px 60px 20px 20px;
+	position: relative;
+	border-top: solid 8px #ea5a4b;
+}
+footer p {
+	color: #adadad;
+}
+footer h3 {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	color: #adadad;
+}
+footer a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Bitter', serif;
+	color: #adadad;
+}
+.services {
+	padding-right: 25px
+}
+.services p:after {
+	content: url('../img/sep.png');
+	display: block;
+}
+.services p:last-child:after {
+	content: none;
+}
+footer div:nth-child(2) {
+	padding-right: 35px;
+	padding-left: 25px;
+}
+@media only all and (max-width:840px) {
+	footer {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	footer > div:nth-child(2) {
+		padding: 0;
+	}
+}
+@media only all and (max-width:600px) {
+	footer div:nth-child(2) {
+		display: none;
+	}
+}
+	
+

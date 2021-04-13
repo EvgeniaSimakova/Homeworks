@@ -1,0 +1,111 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.logo {
+	font-family: 'Bitter', serif;
+	font-size: 24px;
+	line-height: 16px;
+}
+.logo::before {
+	content: url('../img/i.png');
+	width: 34px;
+	height: 34px;
+	background-color: #ea5a4b;
+}
+.social_media {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #1c1c1c;
+	padding: 10px;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+.social_media img {
+	padding: 5px 10px;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	-o-transition: transform 0.5s;
+	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.social_media img:hover {
+	-webkit-transform: scale(1.5); 
+	    -ms-transform: scale(1.5); 
+	        transform: scale(1.5); 
+}
+.menu {
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+	        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+	background-color: #ffffff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 15px;
+}
+
+.menu > ul {
+	margin: 0;
+}
+.menu ul li {
+	display: inline;
+	text-transform: uppercase;
+	color: #252525;
+	padding: 0 10px;
+	border-radius: 20px;
+}
+.menu a {
+	text-decoration: none;
+}
+.menu ul li:hover {
+	color: white;
+	background: #ea5a4b;
+	border-radius: 20px;
+}
+.logo > span {
+	color: #ea5a4b;
+}
+@media only all and (max-width:515px) {
+	.logo {
+		font-size: 16px;
+		position: relative;
+		padding-left: 9px;
+	}
+	.logo::before {
+		top: 0px;
+		position: relative;
+		margin-left: -11px;
+	}	
+	.menu ul {
+		font-size: 11px;
+		padding: 0;
+	}
+	.menu ul a {
+		display: block;
+		padding-right: 20px;
+	}
+}
+	
+
+	

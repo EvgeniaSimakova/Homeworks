@@ -37,6 +37,7 @@ function Cat(name) {
 
     self.stroke = function() {
         console.log('Гладим кота');
+        return self;
     };
 
 }

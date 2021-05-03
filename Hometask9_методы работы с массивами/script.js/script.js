@@ -1,4 +1,4 @@
-// Task 1
+// Task 1 Переписать задачу с использованием перебирающего метода массивов
 
 var numbers = [-1, 0, 2, 34, -2];
 
@@ -22,7 +22,7 @@ console.log(findNum);
 
 function isPalindrome(word) {
     
-    var wordReverse = word.split('').reverse().join(''); 
+    var wordReverse = word.toLowerCase().split('').reverse().join(''); 
 
     if (wordReverse === word) {
       return true;
@@ -38,7 +38,7 @@ function isPalindrome(word) {
 
     function areAnagrams(word1, word2) {
 
-    if (word1.split('').sort().join('') === word2.split('').sort().join('')) {
+    if (word1.toLowerCase().split('').sort().join('') === word2.toLowerCase().split('').sort().join('')) {
         return true;
     } else {
         return false;
@@ -48,7 +48,7 @@ function isPalindrome(word) {
     console.log(areAnagrams('днесь', 'снедь'));
     console.log(areAnagrams('привет', 'пока'));
 
-    // Task 5
+    // Task 5 Написать функцию, которая будет разбивать массив на под-массивы определенной длины.
 
     function divideArr(array, arraySize) {
         var newArray = [];

@@ -1,26 +1,22 @@
 // Task 1 Написать функцию, принимающую массив имен и возвращающую массив объектов вида {name: 'Vasya'}
 
-var names = ['Vasya', 'John', 'Peter', 'David', 'Daniel'];
-
-function changeNames(curr) {
-    return '{name:' + curr +'}';
+function changeNames(names) {
+    return names.map(function(curr) {
+        return  {'name': curr};
+    });
 }
 
-console.log(names.map(changeNames));
+console.log(changeNames(['Vasya', 'John', 'Peter', 'David', 'Daniel']));
 
 // Task 2 
 
-var currentArr = ['00', '13', '24'];
-
-function currentTime(arr) {
-    var time = arr.reduce(function(result, currentElem) {
-        return  result  + ' : ' + currentElem;
+function currentTime(time) {
+    return 'Текущее время: '+ time.reduce(function(result, currentElem) {
+        return result  + ' : ' + currentElem;
     });
-
-    return 'Текущее время: ' + time;
 }
 
-console.log(currentTime(currentArr));
+console.log(currentTime(['00', '13', '24']));
 
 // Task 3 подсчет гласных в слове
 
